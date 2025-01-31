@@ -10,7 +10,7 @@ function Login({ setIsLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('/api/auth/login', {
+      const response = await axios.post('https://expense-backend-o3iu.onrender.com/api/auth/login', {
         email,
         password
       })

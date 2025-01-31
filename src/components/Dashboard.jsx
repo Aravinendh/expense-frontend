@@ -15,7 +15,7 @@ function Dashboard({ setIsLoggedIn }) {
   const fetchExpenses = async () => {
     try {
       const token = localStorage.getItem('token')
-      const response = await axios.get('/api/expenses', {
+      const response = await axios.get('https://expense-backend-o3iu.onrender.com/api/expenses', {
         headers: { Authorization: `Bearer ${token}` }
       })
       setExpenses(response.data)

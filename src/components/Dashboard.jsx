@@ -64,7 +64,7 @@ function Dashboard({ setIsLoggedIn }) {
         }))
       ]
 
-      await axios.post('/api/expenses', {
+      await axios.post('https://expense-backend-o3iu.onrender.com/api/expenses', {
         description,
         amount: Number(amount),
         splitBetween
